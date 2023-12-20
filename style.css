@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;700&family=Cardo&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Mono:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {  
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.outer-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+img{
+    margin-top: 25px;
+    width: 400px;
+    height: auto;
+}
+.text{
+    position: absolute;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 800;
+}
