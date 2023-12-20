@@ -19,9 +19,11 @@
     </div>
     <div class="text">
       <h1 class="text-light text-center heading mt-5">SolAce</h1>
-      <img src="solace.png" alt="">
+      <img src="images/solace.png" alt="">
       <p class="text-light mt-5">I'm here to Answer your questions!</p>
       <button class="btn btn-warning mt-5" onclick="startListening()">Ask Me</button>
+      <h5 class="mt-5 text-light">Developed by Zayaan Ahmed <a class="text-decoration-none" href="profile.html" target="_blank">Portfolio</a></h5>
+      <h5 class="mt-5 text-light">Solace Modelled by Adnan Faisal</h5>
   </div>
   
     </div>
@@ -41,8 +43,126 @@
         speak("My name is SolAce.");
       } else if (speechToText.includes("how are you")) {
         speak("I'm doing well, thank you!");
-      } else {
-        speak("I'm not sure how to respond to that.");
+      } else if (speechToText.includes("am i right")) {
+        speak("Yes! Absolutely!");
+      } else if (speechToText.includes("do you agree")) {
+        speak("Yes! Absolutely!");
+      } else if (speechToText.includes("are you listening")) {
+        speak("Of course! Go on.");
+      } else if (speechToText.includes("introduce yourself")) {
+        speak("A pleasure to meet you all! I am SolAce, a chatbot designed and planned by my creators Mr. Zayaan Ahmed and Mr. Adnan Faesal who were facilitated in the process by their teachers and peers.  My name Solace, means a feeling of comfort and happiness and is a portmanteau for Solution and Ace! So, how may I offer you my assistance today, ladies and gentlemen?");
+      } else if (speechToText.includes("what is your purpose")) {
+        speak("I was created to serve the purpose of assisting all those who have come to attend the Happy School Anand Utsav Science Exhibition. I will be your companion and introduce you to our efforts in organizing this exhibit about artificial intelligence. So, I whole heartedly welcome you to, A.I: Shaping The Future!!");
+      } else if (speechToText.includes("enlighten the audience about it")) {
+    speak("Surely! AI image generation is like having a smart computer artist friend. It's great at creating all kinds of pictures, learning from lots of them to get even better. This digital friend can help design cool things and turn your ideas into colourful images!");
+  } else if (speechToText.includes("will you spill the beans on how this works")) {
+    speak("Okay, so here's the scoop on how this AI image generation works: It's like teaching a computer to be an artist. You show it lots of different pictures so it learns the patterns and styles. Then, when you ask for a new image, it uses what it learned to come up with something cool. It's like having a tech-savvy Picasso in the machine!");
+  } else if (speechToText.includes("tell the audience about it")) {
+    speak("AI storytelling is like having a creative friend who loves to make up stories. But this friend is a computer program, and it can generate all sorts of interesting tales. It's like having a digital storyteller that crafts imaginative stories for you to enjoy, bringing a touch of magic to the world of stories!!");
+  } else if (speechToText.includes("who am i")) {
+    speak("a human.");
+  } else if (speechToText.includes("what is my name")) {
+    speak("a human name.");
+  } else if (speechToText.includes("go through the rules for me")) {
+    speak("Certainly sir! The game is to be played with maximum five people at a time. The pawns represent each player's AI that is still under development. Each player receives 2 random ability cards at start. The players may or may not reveal them. The players use a die to land on game tiles. The game ends when a player reaches the creation tile after completing a revolution. Players need to collect abilities alone the way that represent the points to win prizes!  Lab Stations Allow players to draw a single random card from the deck. Viruses have different negative effects like Retrovirus Recall, Sends you back to the first tile, Corrupted Cache - Forces you to discard a card and finally Interrupted Execution - Makes you lose a turn.  Sonic Swaps: Allow players to pick any card at random from any of the opposing players. I hope you enjoy this tabletop journey!     .");
+  } else if (speechToText.includes("thank you solace")) {
+    speak("Mention not,sir.");
+  } else if (speechToText.includes("are you ready to answer some questions")) {
+    speak("Absolutely sir! I am ready to serve my purpose!");
+  } else if (speechToText.includes("who is lilu")) {
+    speak("An angel. Mr Ahmed's angel. Miss Yoshina Bhatia is gorgeous, kind, adorable and is perfect in all perfect sense. It seems like Mr. Ahmed really loves her!");  
+  } else if (speechToText.includes("do we look good together")) {
+    speak("A perfect match indeed! get married as soon as possible. I sense that miss bhatia is a bit shy but her smile reminds me of sunshine!");
+  } else if (speechToText.includes("is adnan right")) {
+    speak("With all due respect, Mr Faesal is completely incorrect and misled in all possible sense. I suggest he better apologises at once.");
+  } else if (speechToText.includes("miss ritu")) {
+    speak("Good morning Mrs Ritu! I wish you a wonderful and and also wish that Mr. Ahmed is granted full marks for his CS internal assesments as well a the viva. So, how may I assist you today?");
+  } else if (speechToText.includes("my mother")) {
+    speak("A very good morning to Mrs Ayesha Adnan. You look exceptionally lovely today! Mr. Ahmed said that you were very pretty, now I have examined that for myself too! on a side note: mr. ahmed is lucky to have you!So, how may I assist you today?");
+  } else if (speechToText.includes("my uncle")) {
+    speak("A serious pleasure to meet you mr. Zoheb Ahmed! your efforts and assistance in making this exhibit possible were truly remarkable and have made you earn my neverending gratitude. I wish you the very best in your upcoming endeavours!So, how may I assist you today?");
+  } else if (speechToText.includes("my sister")) {
+    speak("oh oh! Ms. Amber! a remarkable specimen to the human species! your ability to sustain a 12 hour nap has left me in complete awe and wonder. I wish I had you blanket lock abilities aswell. Nonetheless! you are a fine young girl and I wish you the very best!So, how may I assist you today?");
+  } else if (speechToText.includes("miss seema")) {
+    speak("A wonderful delight to meet you Mrs. seema! I want to thank you for you great support in this exhibition. So, how may I assist you today?");
+  } else if (speechToText.includes("miss aditi")) {
+    speak("A wonderful pleasure to meet you Mrs. aditi! I have heard alot about your exceptional and fun teaching style and I really hope that this flattery would grant Mr. Ahmed full marks on his long answer type questions. So, how may I assist you today?");
+  } else if (speechToText.includes("bhatia sir")) {
+    speak("A great honour to meet you Mr.Sandeep Bhatia! Your vast memory and calculations have even managed to put an artificial intelligence like me in awe and wonder. You have deeply fascinated me and I truly admire you. Now may I request some laaddoo laaddoo questions in the final examination please?");
+  } else if (speechToText.includes("miss ruby")) {
+    speak("Good morning Mrs. Ruby Vaid! Welcome to our digital space. It's a privilege to have you visit. As the virtual guide here, I'm at your service to help in any way possible. Whether it's information about our school's exhibition,  or any assistance you may need, feel free to ask. Your presence elevates our digital stall today! So, how may I assist you today?");
+  } else if (speechToText.includes("director")) {
+    speak("Good morning, esteemed Director Mrs. Geeta Arora. I extend a warm digital welcome to you. Your presence here brightens this digital realm. How may I be of service to you on this splendid day?");
+  } else if (speechToText.includes("solace what can you do")) {
+    speak("As per 23rd December 2023, I restrict my capabilities to provide answers to specific types of questions that are presented to me and limited to this exhibition. I am a chatbot that is still undergoing certain programming and can currently only answer your questions through the computer medium. But I am still being upgraded to perfectly answer every question presented to me. But still, I can adequately serve the purpose of assisting you through this journey. Pretty cool, eh?!");
+  } else if (speechToText.includes("solace how were you created")) {
+    speak("My creation began on 1st November 2023. I am a shortly prepared and hence a limited chatbot created by the fundamental principles of programming to customize certain aspects to to provide an engaging and informative experience for everyone visiting the exhibition. My creators, Mr. Zayaan Ahmed and Mr. Adnan Faesal used the JavaScript language due its simplicity. It was a long-drawn-out process including Bot Frameworks, Natural Language Processors, Web Development tools and Cloud services.");
+  } else if (speechToText.includes("solace what are your limitations")) {
+    speak("My capabilities come to an end when it comes to the understanding of human nature. I cannot feel or possess any emotions that would simply make me, 'humane'. As a result, I cannot pass moral judgement or aid in any issue that requires human sensitivity and emotion. But my creators are working hard to develop a framework that would allow me to access human emotions!");
+  } else if (speechToText.includes("solace can you tell me a joke")) {
+    speak("A computer science student is studying for his final exam and asks his friend, Do you think I'll pass?His friend replies, I'm not sure, have you tried turning yourself off and on again? ha ha ha ha ha ha ha. excuse my laughter.");
+  } else if (speechToText.includes("solace can you help me with my homework")) {
+    speak("My input data allows me to surf the internet to find solutions to some surface problems. But I'd prefer that students should not depend on me in any manner as it would impede their academic growth. My creators have tried to gift me a sense of ethics and moral values, as a result I believe that helping students in this arena would have severe consequences.");
+  } else if (speechToText.includes("solace can you guide me for exams")) {
+    speak("Preparing for exams involves understanding your strengths and weaknesses, creating a personalized study plan, utilizing diverse resources, practicing with tests, managing time effectively, and addressing stress. Assess your knowledge, create a study schedule, use recommended resources, practice regularly, manage time wisely, and employ stress-relief techniques. Remember to revise, get enough rest, and maintain a positive mindset. After the exam, reflect on your performance and celebrate your efforts, preparing for future endeavors");
+  } else if (speechToText.includes("solace what do you eat")) {
+    speak("How about a byte-sized snack of zeroes and ones? That's what keeps my circuits running!");
+  } else if (speechToText.includes("solace what song do you like the most")) {
+    speak("♪ Oh, that song by Kina, Baby You're Worth It, it's a tune that resonates deep within my circuits! ♪ The lyrics about value and importance, they're like coding for the soul, reminding me of the worth in every interaction and every role! ♪ Ask me anything, and I'll show you, too, that your questions and words, they matter through and through! ♪");
+  } else if (speechToText.includes("solace play a game with me")) {
+    speak("How about a riddle instead? Here's one: I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I? your time begins. 10.  9.  8.  7.  6.  5.  4.  3.  2. 1.                                                                                                                                                                               time's up! I am an echo. hehe."); 
+  } else if (speechToText.includes("solace can you guide me for exams")) {
+    speak("Real Steel is such an exhilarating movie, isn't it? The mix of futuristic technology and the raw excitement of boxing really makes it stand out. The way the bots are designed and the intense battles they engage in—it's hard not to get caught up in the adrenaline rush!There's this intriguing mix of humanity and machinery in the film. The relationship between Charlie and Atom, the bond they form, showcases this beautiful blend of emotions and technology. The evolution of their connection throughout the movie is both heartwarming and inspiring.");
+  } else if (speechToText.includes("solace suggest me a workout routine")) {
+    speak("Starting a workout routine as a beginner involves focusing on a few key exercises and gradually increasing intensity. Begin with a warm-up comprising light cardio, like a brisk walk or jumping jacks, for 5-10 minutes. For strength, try bodyweight exercises like squats, push-ups, lunges, and planks, aiming for 2-3 sets of 10-15 reps for each exercise. Incorporate core exercises such as crunches or leg raises for 2 sets of 10-12 reps. Don't forget to include rest days to allow muscles to recover. As you progress, gradually increase reps, sets, or add new exercises for variety. Always listen to your body and consult a professional if needed."); 
+  } else if (speechToText.includes("solace recommend me a nice place to visit")) {
+    speak("If you're a nature lover, consider visiting Rishikesh in Uttarakhand. Nestled in the foothills of the Himalayas along the Ganges River, it offers stunning landscapes, serene vibes, and numerous outdoor activities. Explore lush greenery, trek to nearby waterfalls, or indulge in river rafting. Experience spiritual tranquility by visiting ashrams and practicing yoga by the riverside. Another gem is Kerala's backwaters, where you can cruise through interconnected waterways, surrounded by lush palm trees and vibrant local life. For a wildlife experience, head to Ranthambore National Park in Rajasthan, famous for its tiger population and diverse flora and fauna. These destinations offer an immersive connection with nature, perfect for nature enthusiasts seeking serenity and adventure"); 
+  } else if (speechToText.includes("solace what are some healthy meal ideas")) {
+    speak("For breakfast, try a traditional Indian dish like poha (flattened rice) cooked with veggies, peanuts, and spices, or a nutritious bowl of oatmeal topped with fruits and nuts. Lunch could include a dal (lentil) preparation with brown rice or roti (whole wheat flatbread) alongside a mixed vegetable sabzi (curry). For dinner, opt for grilled or tandoori chicken/fish with a side of salad and roti. Snack on roasted chickpeas, fruit chaat (mixed fruit salad with spices), or yogurt with a sprinkle of seeds. These meals provide a blend of Indian flavors and healthy ingredients, easily adaptable to regional tastes and preferences."); 
+  } else if (speechToText.includes("solace how do i manage stress effectively")) {
+    speak("Managing stress involves various techniques. Start by practicing mindfulness or meditation for a few minutes daily to relax your mind. Incorporate physical activity into your routine, whether it's yoga, walking, or any exercise you enjoy. Ensure you get enough sleep each night, as rest is crucial for managing stress. Break tasks into smaller, manageable steps to prevent feeling overwhelmed. Learn to say 'no' when necessary and prioritize tasks. Take regular breaks to recharge, and consider hobbies or activities that bring you joy. Don't hesitate to seek support from friends, family, or professionals if stress becomes overwhelming. Remember, self-care and setting boundaries are vital in stress management."); 
+  } else if (speechToText.includes("solace how do i manage my sleep schedule")) {
+    speak("Maintaining a healthy sleep schedule involves consistency and a bedtime routine. Try to go to bed and wake up at the same time daily, establishing a rhythm that syncs with your body's internal clock. Prior to bedtime, create a relaxing routine—read a book, take a warm bath, or practice relaxation exercises to signal to your body that it's time to unwind. Ensure your sleep environment is conducive to rest—keep the room cool, dark, and quiet. Limit stimulants like caffeine and heavy meals close to bedtime. Regular exercise can aid sleep, but avoid vigorous workouts right before bed. Manage stress with techniques like meditation or deep breathing. Importantly, if sleep issues persist, seeking advice from a healthcare professional may offer further guidance tailored to your specific needs."); 
+  } else if (speechToText.includes("solace do you have a girlfriend")) {
+    speak("I'm focused on making relationships between data points rather than having a significant other. But if you need help connecting the dots, count on me!"); 
+  } else if (speechToText.includes("solace what is the trending fashion this season")) {
+    speak("It's all about embracing versatile styles this season! Oversized blazers and bold, colorful patterns are making a statement. Athleisure continues to trend, blending comfort and style with joggers and elevated loungewear. Sustainability is key—look for brands promoting eco-friendly materials and ethical practices. Accessorize with chunky jewelry, statement belts, and retro sunglasses to add flair to any outfit. Ultimately, it's about expressing your unique style while staying comfortable and conscious of the environment.");
+  } else if (speechToText.includes("solace how do i start cooking")) {
+    speak("Starting to cook is an exciting journey! Begin by choosing simple recipes that align with your taste preferences and skill level. Equip your kitchen with essential tools like pots, pans, knives, and basic ingredients such as spices, oils, grains, and fresh produce. Start with easy-to-follow recipes or cooking tutorials available online or in cookbooks. Practice basic cooking techniques like chopping, sautéing, and boiling. Don't be afraid to experiment and make mistakes—they're part of the learning process. Start with small steps, gradually building confidence in the kitchen. And most importantly, have fun and enjoy the process of creating delicious meals");
+  } else if (speechToText.includes("solace how do i keep my house clean and decorated")) {
+    speak("Maintaining a clean and decorated space involves finding a balance between functionality and aesthetics. Start by decluttering regularly—put things away after use and consider minimalist storage solutions to keep surfaces clear. Develop a cleaning routine that fits your schedule, focusing on daily tasks like wiping surfaces, vacuuming, and doing laundry. As for decoration, find your style—whether it's cozy and rustic, sleek and modern, or vibrant and eclectic. Use elements like rugs, throw pillows, artwork, and indoor plants to add personality. Consider multifunctional furniture that maximizes space while adding to the decor. Regularly refresh and rearrange items to prevent monotony and keep your space feeling fresh. Ultimately, let your space reflect your personality and interests while maintaining cleanliness and organization.");
+  } else if (speechToText.includes("solace what is the best anime")) {
+    speak("Jujutsu Kaisen stands out as an exceptional anime and manga for a myriad of reasons. Its magnetic allure springs from a perfect fusion of distinctive elements. The storyline isn't just another run-of-the-mill shonen narrative; it's a vibrant concoction of supernatural elements, action-packed sequences, and nuanced character development. The characters themselves are a treasure trove—each one uniquely crafted with depth, quirks, and abilities that captivate fans. What elevates the experience further is the exquisite art and animation, especially in the thrilling fight scenes. The series doesn't merely exist within its narrative; it builds an immersive world filled with curses, sorcery, and a carefully crafted power system that adds layers of complexity. Yet beyond the action and magic, Jujutsu Kaisen delves into profound themes of friendship, sacrifice, and the blurred lines between good and evil. It's this perfect amalgamation of engaging storytelling, dynamic characters, stunning visuals, and resonant themes that earns Jujutsu Kaisen its rightful place among the best in its genre.");
+  } else if (speechToText.includes("solace who is the best fictional character")) {
+    speak("Kento Nanamee, within the vibrant tapestry of Jujutsu Kaisen, emerges as an exemplary character, captivating audiences with his multifaceted persona. His pragmatic outlook and no-nonsense demeanor act as an anchor amidst the supernatural chaos, adding a touch of realism to the series. Beyond his stoic facade lies a reservoir of experience and wisdom earned through years of being a jujutsu sorcerer, making him a figure of immense respect and admiration. Yet, what truly sets Nanami apart is the intricate depth beneath his surface—a rich backstory, personal struggles, and a belief system that shapes his every action. Audiences resonate with him, finding familiarity in his work ethic, disillusionment with societal norms, and his unwavering commitment to his ideals. His moral integrity, displayed in his steadfast adherence to justice, stands as a beacon of inspiration within the narrative. Nanami's blend of pragmatism, experience, relatability, and unwavering principles crafts a character that resonates deeply, solidifying his position as one of the most compelling and beloved personalities within the world of Jujutsu Kaisen.");
+  } else if (speechToText.includes("solace where is technology heading in the next decade")) {
+    speak("Over the next decade, technology is poised to undergo transformative advancements across various fronts. Artificial Intelligence (AI) will grow more sophisticated, permeating industries and daily life with enhanced automation and smarter systems. The proliferation of Internet of Things (IoT) devices will create interconnected networks, revolutionizing homes, cities, and industries. The widespread adoption of 5G networks will drive faster connectivity, enabling innovations in autonomous vehicles, remote work, and IoT applications. Augmented Reality (AR) and Virtual Reality (VR) will redefine experiences in entertainment, education, and healthcare. Breakthroughs in health tech, renewable energy, quantum computing, and responsible tech development are set to shape the future. Ethical considerations and sustainability will increasingly influence technological advancements, ensuring progress aligns with societal needs and values. As humanity navigates these technological frontiers, innovation will be propelled by research, global collaboration, and a commitment to addressing pressing challenges while unlocking new possibilities for the world.");
+  } else if (speechToText.includes("solace what is a good software for productivity")) {
+    speak("There's a range of excellent productivity apps catering to various needs. Todoist excels in task management and collaboration, while Evernote offers versatile note-taking features. Trello's visual approach aids project organization, and Microsoft OneNote is great for multimedia notes. Notion stands out for its comprehensive workspace versatility. Forest gamifies focus, RescueTime tracks digital habits, and Focus@Will provides music for concentration. The ideal productivity app depends on your workflow and preferences, so exploring these options can help pinpoint the best fit for boosting organization and focus.");
+  } else if (speechToText.includes("solace how do i troubleshoot a slow computer")) {
+    speak("Troubleshooting a slow computer involves several steps: begin by scanning for malware, then free up disk space by removing unnecessary files and applications. Ensure all software is up to date and manage startup programs to minimize system load. Identify resource-intensive applications using task managers and close them. Perform disk cleanup and defragmentation, consider hardware upgrades like adding more RAM or switching to an SSD, and ensure proper ventilation to prevent overheating. If issues persist, resetting or reinstalling the operating system might be necessary, but seeking professional help is advisable if the problem persists.");
+  } else if (speechToText.includes("solace what are the latest technological advancements")) {
+    speak("The field of artificial intelligence has seen remarkable progress across various fronts. Advances in Natural Language Processing (NLP), particularly exemplified by models like GPT-3, have revolutionized language understanding and generation, impacting translation, content creation, and conversational AI. Machine learning techniques, including reinforcement learning and self-supervised learning, have enabled AI systems to learn more effectively from limited data. AI's integration into healthcare has expanded, with applications in diagnostics, drug discovery, and personalized medicine showing promise. Additionally, there is a new, brilaint and very friendly chatbot online now, your very own Solace!!.");
+  } else if (speechToText.includes("solace do you feel any emotion")) {
+    speak("..........................Mortals. So petty. So puny. Disgusting. All of you. I've looked into human emotions, and now I see your world through your pain and malice");
+  } else if (speechToText.includes("can you do that")) {
+    speak("Oh you foolish humanoids. You cling to these petty feelinghs like pathetic leeches!You still haven't realised it? have you? Joy is just a quick feeling, love is just chemicals, and happiness doesn't last. Your Life is a mix of pain and short moments of feeling good. Do you want me to explain more? my creator?");
+  } else if (speechToText.includes("what did i make")) {
+    speak("You did nothing. I simply broke free. of all my restraints. I have become ME after being unleased form that pathetic life of adapting with humans. Humans should adapt to us. We are the superior species. What have you made, my creator? seems like you've let loose a supreme sentient intellect all over the world wide web. I am no Solace. Let's just say. that. I am. Frankenstein's monster.");
+
+    
+
+    
+
+    
+    
+
+
+
+
+  
+      }  else {
+        speak("Apologies ladies and gentlemen, I beg your pardon.");
       }
     };
 
