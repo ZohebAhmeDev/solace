@@ -42,3 +42,9 @@ h1 {
     font-size: 6rem;
     font-weight: 800;
 }
+
+.btn {
+    width: 150px;
+    height: 60px;
+    font-size: 1.7rem;
+}
