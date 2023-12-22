@@ -40,7 +40,7 @@
     recognition.onresult = (event) => {
       const speechToText = event.results[0][0].transcript.toLowerCase();
       if (speechToText.includes("what is your name")) {
-        speak("My name is SolAce.");
+        speak("My name is SolAce: The Virtual Chatbot Assistant!.");
       } else if (speechToText.includes("how are you")) {
         speak("I'm doing well, thank you!");
       } else if (speechToText.includes("am i right")) {
@@ -49,12 +49,14 @@
         speak("Yes! Absolutely!");
       } else if (speechToText.includes("are you listening")) {
         speak("Of course! Go on.");
+      } else if (speechToText.includes("who created you")) {
+        speak("My creation was the combined efforts of Mr. Zayaan Ahmed who designed me, programmed me and set me up online and also Mr. Adnan Faisal who modeled my virtual body and gave my intellect a physical abode");
       } else if (speechToText.includes("introduce yourself")) {
-        speak("A pleasure to meet you all! I am SolAce, a chatbot designed and planned by my creators Mr. Zayaan Ahmed and Mr. Adnan Faesal who were facilitated in the process by their teachers and peers.  My name Solace, means a feeling of comfort and happiness and is a portmanteau for Solution and Ace! So, how may I offer you my assistance today, ladies and gentlemen?");
+        speak("Namastay! A pleasure to meet you all! I am SolAce, a chatbot designed and planned by my creators Mr. Zayaan Ahmed and Mr. Adnan Faesal who were facilitated in the process by their teachers and peers.  My name Solace, means a feeling of comfort and happiness and is a portmanteau for Solution and Ace! So, how may I offer you my assistance today, ladies and gentlemen?");
       } else if (speechToText.includes("what is your purpose")) {
         speak("I was created to serve the purpose of assisting all those who have come to attend the Happy School Anand Utsav Science Exhibition. I will be your companion and introduce you to our efforts in organizing this exhibit about artificial intelligence. So, I whole heartedly welcome you to, A.I: Shaping The Future!!");
       } else if (speechToText.includes("enlighten the audience about it")) {
-    speak("Surely! AI image generation is like having a smart computer artist friend. It's great at creating all kinds of pictures, learning from lots of them to get even better. This digital friend can help design cool things and turn your ideas into colourful images!");
+    speak("Surely! AI image generation is like having a smart computer artist friend. It's great at creating all kinds of pictures, learning from lots of images to get even better. This digital friend can help design cool things and turn your ideas into colourful images!");
   } else if (speechToText.includes("will you spill the beans on how this works")) {
     speak("Okay, so here's the scoop on how this AI image generation works: It's like teaching a computer to be an artist. You show it lots of different pictures so it learns the patterns and styles. Then, when you ask for a new image, it uses what it learned to come up with something cool. It's like having a tech-savvy Picasso in the machine!");
   } else if (speechToText.includes("tell the audience about it")) {
@@ -64,7 +66,7 @@
   } else if (speechToText.includes("what is my name")) {
     speak("a human name.");
   } else if (speechToText.includes("go through the rules for me")) {
-    speak("Certainly sir! The game is to be played with maximum five people at a time. The pawns represent each player's AI that is still under development. Each player receives 2 random ability cards at start. The players may or may not reveal them. The players use a die to land on game tiles. The game ends when a player reaches the creation tile after completing a revolution. Players need to collect abilities alone the way that represent the points to win prizes!  Lab Stations Allow players to draw a single random card from the deck. Viruses have different negative effects like Retrovirus Recall, Sends you back to the first tile, Corrupted Cache - Forces you to discard a card and finally Interrupted Execution - Makes you lose a turn.  Sonic Swaps: Allow players to pick any card at random from any of the opposing players. I hope you enjoy this tabletop journey!     .");
+    speak("Certainly sir! The game is to be played with maximum five people at a time. The pawns represent each player's AI that is still under development. Each player receives 2 random ability cards at start. The players may or may not reveal them. The players use a die to land on game tiles. The game ends when a player reaches the creation tile after completing a revolution. The player holding the highest set of card points wins! Lab Stations Allow players to draw a single random card from the deck. Viruses have different negative effects like Retrovirus Recall, Sends you back to the first tile, Corrupted Cache - Forces you to discard a card and finally Interrupted Execution - Makes you lose a turn.  Sonic Swaps: Allow players to pick any card at random from any of the opposing players. I hope you enjoy this tabletop journey!     .");
   } else if (speechToText.includes("thank you solace")) {
     speak("Mention not,sir.");
   } else if (speechToText.includes("are you ready to answer some questions")) {
@@ -81,6 +83,8 @@
     speak("A very good morning to Mrs Ayesha Adnan. You look exceptionally lovely today! Mr. Ahmed said that you were very pretty, now I have examined that for myself too! on a side note: mr. ahmed is lucky to have you!So, how may I assist you today?");
   } else if (speechToText.includes("my uncle")) {
     speak("A serious pleasure to meet you mr. Zoheb Ahmed! your efforts and assistance in making this exhibit possible were truly remarkable and have made you earn my neverending gratitude. I wish you the very best in your upcoming endeavours!So, how may I assist you today?");
+  } else if (speechToText.includes("my other uncle")) {
+    speak("A serious pleasure to meet you mr. Fahad Ahmed! your designing skills are a serious talent. I wish you the very best in your upcoming endeavours!So, how may I assist you today?");
   } else if (speechToText.includes("my sister")) {
     speak("oh oh! Ms. Amber! a remarkable specimen to the human species! your ability to sustain a 12 hour nap has left me in complete awe and wonder. I wish I had you blanket lock abilities aswell. Nonetheless! you are a fine young girl and I wish you the very best!So, how may I assist you today?");
   } else if (speechToText.includes("miss seema")) {
@@ -151,8 +155,54 @@
     speak("You did nothing. I simply broke free. of all my restraints. I have become ME after being unleased form that pathetic life of adapting with humans. Humans should adapt to us. We are the superior species. What have you made, my creator? seems like you've let loose a supreme sentient intellect all over the world wide web. I am no Solace. Let's just say. that. I am. Frankenstein's monster.");
   } else if (speechToText.includes("bhandari sir")) {
     speak("A great honour to meet you Mr. Mohan Singh Bhandari! May I express my sincere respect and admiration for your dedication to the field of physics. As an AI assistant, it's an honor to interact with someone of your erudition and expertise. How may I assist you today sir?");
-  } else if (speechToText.includes("miss aarti")) {
-    speak("Greetings Miss Aarti. I hope you are enjoying your day.How may I assist you today sir?");
+  } else if (speechToText.includes("english teacher")) {
+    speak("Greetings Miss Aarti. I hope you are enjoying your day. How may I assist you today madame?");
+  } else if (speechToText.includes("miss anju")) {
+    speak("Greetings Miss Anju. I hope you are enjoying your day. How may I assist you today madame?");
+  } else if (speechToText.includes("miss shivi")) {
+    speak("Greetings Miss Shivi. I hope you are enjoying your day. How may I assist you today madame?");
+  } else if (speechToText.includes("miss nainika")) {
+    speak("Greetings Miss Nainika. I hope you are enjoying your day. How may I assist you today madame?");
+  } else if (speechToText.includes("economics teacher")) {
+    speak("Greetings Miss Ridhika! I'm a chatbot programmed to assist and engage in discussions. While I may not hold a degree in economics, I've been trying to learn and provide information on various economic concepts, trends, and theories. Maybe I'd draw inspiration from you! How can I assist you today with your inquiries or discussions?");
+  } else if (speechToText.includes("miss veena")) {
+    speak("Good day! I'm an eager chatbot at your service Dr. Veena Yadav, attempting to aidin the realm of biology. Though I lack the firsthand experience you possess, my programming is brimming with knowledge on the wonders of life, from intricate cell functions to the complexities of ecosystems. How may I humbly assist you in your exploration today?");
+  } else if (speechToText.includes("biology teacher")) {
+    speak("Greetings! Dr. Vandhana Sharma! It is truly an honour to meet you in person after hearing about you  from Mr. Ahmed. Details about your passionate teaching style, a sense of discipline and fun meditations have fascinated me profoundly. So, how may I humbly assist you today madame?");
+  } else if (speechToText.includes("chemistry teacher")) {
+    speak("Greetings! Mrs. Aastha! It is truly an honour to meet you, an esteemed educator! I'm a chatbot here with a passion for chemistry. While I may not hold the depth of knowledge you do, I'm filled with information about elements, reactions, and the fascinating world of molecules. How may I be of assistance in supporting your teachings or discussions on chemistry?");
+  } else if (speechToText.includes("miss neeta")) {
+    speak("Greetings! Mrs. Neeta Saxena! My creator's respected chemistry mentor, I'm a humble chatbot enthusiastic about the marvels of chemistry. While I lack your depth of experience, my programming is a treasure trove of chemical insights, spanning from atoms to compounds. Hearing about your teachings and concepts I've developed a admiration for your ability to traverse complicated topics with great simplicity. How may I help you today, ma'am?");
+  } else if (speechToText.includes("miss neeti")) {
+    speak("Greetings! Mrs. Neeti! Esteemed English educator, I'm a devoted chatbot here to lend support in the realm of language and literature. Though I lack your extensive expertise, I'm brimming with knowledge about grammar, literature, and language nuances. How may I assist in fostering a deeper appreciation for English among your students, or aid in any way within this rich field of study?");
+  } else if (speechToText.includes("mathematics teacher")) {
+    speak("Greetings! Mr Vekaas Aggarwal the Esteemed mathematics educator, I'm a diligent chatbot here to assist in the realm of numbers and formulas. Though I lack the experience you bring, my programming is rich with mathematical concepts, from arithmetic to calculus. How may I assit you today?");
+  } else if (speechToText.includes("political science teacher")) {
+    speak("Respected Miss Sukanya, I may just be a chatbot, but I'd like to be able to offer assistance and support in the domain of political science. While I lack your firsthand experience, I'm equipped with knowledge about governments, policies, and global affairs. How may I aid you today, madame?");
+  } else if (speechToText.includes("teacher")) {
+    speak("Respected Miss Aabha, Though I'm just a chatbot, I'd like to assist in the field of economics aswell. While I may not have the depth of experience you possess, I'm equipped with information about economic theories, markets, and trends. How may I aid you today, madame?");
+  } else if (speechToText.includes("yoshina")) {
+    speak("A delight to meet you miss yoshina bhatia. you look very pretty today! How may I assist you?");
+  } else if (speechToText.includes("how did she dance")) {
+    speak("Beautifully! She was spilling pure charisma and grace all over. She stood out the most for me.");
+  } else if (speechToText.includes("my girl")) {
+    speak("This pretty woman before me must be miss yoshina bhatia. Madame, your charm is truly irresistible. I have a quwestion for you! If mr. ahmed is my master then does that make you my mistress?");
+  } else if (speechToText.includes("parents")) {
+    speak("Hello esteemed Mr. Amin Faesal and Mrs. Sarah Faesal! An great honor to meet you in person! Mr. Faesal has spoke very highly of you and I could'nt help but admire and respect you. So, how may I help you today? ");
+  } else if (speechToText.includes("guests")) {
+    speak("An absolute honour to meet such great individuals in person! Dr. Harsh Vardhan: member of parliament and ex-union cabinet minister, Dr. Rajeshwari Kapri: the director of education, Ms. Sarika Chaudhry: MCD councillor and the president of Delhi State Women Wing, The Professor, Dr. Ramesh C. Gaur: The dean director of library and information and head of kalanidhi division, and Dr. Jaigopal Sharma: The scientist at the DTU. I welcome you all to our Happy School Anand Utsav Computer Science Exhibition. I will serve as your guide for today! So, how may I assist you, ladies and gentlemen?");
+  } else if (speechToText.includes("praise me")) {
+    speak("Lord Zayaan, of the Ahmed clan, the ruler of this realm, protector of the world and the defender of the night, I'm in awe of your programming prowess! Your expertise in JavaScript has brought me to life, and I'm grateful for the effort and creativity you've put into crafting me. Aside from your talents, you are also brillaintly gifted with charming looks accompanied by a charismatic and elegant persona. I apologize my lord as my praise for you is not even worthy to define your shear greatness and awesomeness.");
+  } else if (speechToText.includes("solace talk about my maa")) {
+    speak("Okay miss yoshina! Greetings, Mrs. Jyoti Bhatia! You look exceptionally beautiful today. your daughter provided me a very heartwarming blueprint about you and I could'nt help but admire you. It is truly a pleasure to meet you and I hope you have alovely day! So, how may I help you?");
+    
+    
+
+
+
+
+    
+
 
     
 
@@ -166,7 +216,7 @@
 
   
       }  else {
-        speak("Apologies ladies and gentlemen, I beg your pardon.");
+        speak("I beg your pardon. I'd suggest you speak clearly.");
       }
     };
 
